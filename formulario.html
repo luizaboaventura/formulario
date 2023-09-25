@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <!-- link do bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/img/logo_alpaca.png" class="logo"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Novidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Promoção</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 rounded-0"
+              type="search"
+              placeholder="Pesquise produto"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light rounded-0" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container_form">
+      <h2 class="text-center">Cadastro</h2>
+      <p class="text-center">Por gentileza, preencha os seus dados abaixo:</p>
+      <form class="row g-3" id="form">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="name" 
+           />
+          <div class="invalid-feedback">Informe um nome válido (pelo menos 2 letras).</div>
+        </div>
+        <div class="col-md-6">
+          <label for="lastname" class="form-label">Sobrenome</label>
+          <input type="text" class="form-control" id="lastname" />
+          <div class="invalid-feedback">Informe um sobrenome válido (pelo menos 2 letras).</div>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="nome@email.com" />
+          <div class="invalid-feedback">Informe um email válido.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="password" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="password" />
+          <div class="invalid-feedback">Informe uma senha válida (pelo menos 6 caracteres).</div>
+        </div>
+        <div class="col-md-6">
+          <label for="password-again" class="form-label"
+            >Confirmação da senha</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="password-again"
+          
+          />
+          <div class="invalid-feedback">Deve coincidir com a senha digitada.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="birthdate" class="form-label">Data de nascimento</label>
+          <input type="date" class="form-control" id="birthdate" />
+          <div class="invalid-feedback">Deve ter 18 anos ou mais.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Telefone</label>
+          <input type="tel" class="form-control" id="phone" placeholder="XX XXXXXXXXX" />
+          <div class="invalid-feedback">Informe um telefone válido.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="cpf" class="form-label">CPF</label>
+          <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" />
+          <div class="invalid-feedback">Informe um CPF válido (com pontuação e hífen).</div>
+        </div>
+        <div class="col-md-6">
+          <label for="cep" class="form-label">CEP</label>
+          <input type="text" class="form-control" id="cep" placeholder="00000-000" />
+          <div class="invalid-feedback">Informe um CEP válido (com hífen).</div>
+        </div>
+        <div class="col-md-6">
+          <label for="address" class="form-label">Rua</label>
+          <input type="text" class="form-control" id="address" />
+          <div class="invalid-feedback">Informe uma rua válida.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="number" class="form-label">Número</label>
+          <input type="number" class="form-control" id="number" />
+          <div class="invalid-feedback">Informe um número válido.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="complement" class="form-label">Complemento</label>
+          <input type="text" class="form-control" id="complement" />
+        </div>
+        <div class="col-md-6">
+          <label for="neighborhood" class="form-label">Bairro</label>
+          <input type="text" class="form-control" id="neighborhood" />
+          <div class="invalid-feedback">Informe um bairro válido.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="city" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="city" />
+          <div class="invalid-feedback">Informe uma cidade válida.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="uf" class="form-label">Estado</label>
+          <select class="form-select" id="uf">
+            <option value="" disabled selected>Selecione o estado</option>
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+          </select>
+          <div class="invalid-feedback">Informe estado válido.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="file" class="form-label">Upload de foto</label>
+          <input class="form-control" type="file" id="file" />
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="check"
+              required
+            />
+            <label class="form-check-label" for="check">
+              Li e concordo com os
+              <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Termos de Serviço e Políticas de Privacidade</a>.
+            </label>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Termos de Serviço e Políticas de Privacidade</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>1. Aceitação dos Termos de Serviço</p>
+                    <p>Bem-vindo ao Alpaca! Ao acessar ou usar nossa plataforma, você concorda com estes Termos de Serviço e com nossa Política de Privacidade. Se você não concordar com esses termos, por favor, não use o Alpaca.</p>
+
+                    <p>2. Uso do Serviço</p>
+                    <p>2.1 Você deve ter pelo menos 18 anos para usar o Alpaca.</p>
+                    <p>2.2 Você é responsável por todas as atividades realizadas na sua conta.</p>
+                    <p>2.3 Você concorda em seguir todas as leis e regulamentos aplicáveis ao usar nosso serviço.</p>
+                    <p>2.4 Reservamo-nos o direito de suspender ou encerrar sua conta por violações destes Termos.</p>
+
+                    <p>3. Conteúdo do Usuário</p>
+                    <p>3.1 Você é o único responsável pelo conteúdo que publica no Alpaca.</p>
+                    <p>3.2 Você não pode publicar conteúdo ilegal, difamatório, ofensivo, ou que viole os direitos de terceiros.</p>
+                    <p>3.3 Reservamo-nos o direito de remover ou moderar qualquer conteúdo que considerarmos inapropriado.</p>
+
+                    <p>4. Privacidade</p>
+                    <p>Consulte nossa Política de Privacidade para entender como coletamos, usamos e protegemos suas informações pessoais.</p>
+
+                    <p>5. Alterações nos Termos</p>
+                    <p>Reservamo-nos o direito de modificar estes Termos de Serviço a qualquer momento. Notificaremos você de quaisquer alterações importantes.</p>
+
+                    <p>Política de Privacidade do Alpaca</p>
+
+                    <p>1. Informações Coletadas</p>
+                    <p>1.1 Coletamos informações pessoais que você fornece ao se registrar, como nome, endereço de e-mail e data de nascimento.</p>
+                    <p>1.2 Também coletamos informações automaticamente, como seu endereço IP e dados de uso do serviço.</p>
+
+                    <p>2. Uso das Informações</p>
+                    <p>2.1 Usamos suas informações para fornecer e melhorar nosso serviço.</p>2.1 Usamos suas informações para fornecer e melhorar nosso serviço.
+                    <p>2.2 Não compartilhamos suas informações pessoais com terceiros sem seu consentimento.</p>
+
+                    <p>3. Cookies e Rastreamento</p>
+                    <p>Usamos cookies e tecnologias semelhantes para melhorar a experiência do usuário e coletar informações de uso.</p>
+
+                    <p>4. Segurança</p>
+                    <p>Tomamos medidas para proteger suas informações, mas não podemos garantir segurança absoluta.</p>
+
+                    <p>5. Alterações na Política de Privacidade</p>
+                    <p>Podemos atualizar nossa Política de Privacidade periodicamente e notificaremos você de quaisquer alterações significativas.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary rounded-0">
+            ENVIAR
+          </button>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <p>COPYRIGHT <strong>ALPACA</strong> - 76000852000100 - 2023. TODOS OS DIREITOS RESERVADOS.</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+  <script src="./js/validacoes.js"></script>
+</html>

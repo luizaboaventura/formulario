@@ -1,0 +1,28 @@
+body {
+  background: #f1f1f1;
+}
+
+.logo {
+  width: 100px;
+}
+
+.container_form {
+  height: 100%;
+  margin: auto;
+  padding: 3em 0;
+  width: 90%;
+  max-width: 900px;
+}
+
+footer {
+  background: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  & p {
+    padding-top: 1em;
+  }
+}
